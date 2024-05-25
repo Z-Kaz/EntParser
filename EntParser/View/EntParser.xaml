@@ -1,0 +1,64 @@
+﻿<Window x:Class="EntParser.View.EntParser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EntParser.View"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        SizeToContent="WidthAndHeight"
+        ResizeMode="NoResize"
+        Icon="C:\Users\ibwel\source\repos\EntParser\EntParser\Entling.ico"
+        Title="Zercon25's Chatlog Parser" FontSize="20">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Text="TimeZone:" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="10"/>
+                    <TextBlock Text="Source Directory:" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="10"/>
+                    <TextBlock Text="Archive Directory:" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="10"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <ComboBox DisplayMemberPath="Name" SelectedValuePath="Name" SelectedIndex="{Binding SelectedTimeZoneIndex}" ItemsSource="{Binding ComboBoxTimeZoneItemSource}" MinHeight="30" MinWidth="350" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10"/>
+                    <TextBox Name="SourceDirectory" Text="{Binding SourceDirectory}" Height="25" VerticalContentAlignment="Center" MinHeight="30" Width="550" Margin="10"/>
+                    <TextBox Name="ArchiveDirectory" Text="{Binding ArchiveDirectory}" Height="25" VerticalContentAlignment="Center" MinHeight="30" Width="550" Margin="10"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+                <Viewbox Width="40">
+                    <Image Source="C:\Users\ibwel\source\repos\EntParser\EntParser\Images\Entling.png"/>
+                </Viewbox>
+                <Viewbox Width="40">
+                    <Image Source="C:\Users\ibwel\source\repos\EntParser\EntParser\Images\Entling.png"/>
+                </Viewbox>
+                <Viewbox Width="40">
+                    <Image Source="C:\Users\ibwel\source\repos\EntParser\EntParser\Images\Entling.png"/>
+                </Viewbox>
+                <Viewbox Width="40">
+                    <Image Source="C:\Users\ibwel\source\repos\EntParser\EntParser\Images\Entling.png"/>
+                </Viewbox>
+                <Viewbox Width="40">
+                    <Image Source="C:\Users\ibwel\source\repos\EntParser\EntParser\Images\Entling.png"/>
+                </Viewbox>
+                <Viewbox Width="40">
+                    <Image Source="C:\Users\ibwel\source\repos\EntParser\EntParser\Images\Entling.png"/>
+                </Viewbox>
+                <Viewbox Width="40">
+                    <Image Source="C:\Users\ibwel\source\repos\EntParser\EntParser\Images\Entling.png"/>
+                </Viewbox>
+                <Viewbox Width="40">
+                    <Image Source="C:\Users\ibwel\source\repos\EntParser\EntParser\Images\Entling.png"/>
+                </Viewbox>
+                <Viewbox Width="40">
+                    <Image Source="C:\Users\ibwel\source\repos\EntParser\EntParser\Images\Entling.png"/>
+                </Viewbox>
+                <Viewbox Width="40">
+                    <Image Source="C:\Users\ibwel\source\repos\EntParser\EntParser\Images\Entling.png"/>
+                </Viewbox>
+                <Button Content="Save" Command="{Binding SaveCommand}" MinHeight="30" MinWidth="100" Margin="10"/>
+                <Button Content="Reset" Command="{Binding ResetCommand}" MinHeight="30" MinWidth="100" Margin="10"/>
+                <Button Content="Parse" Command="{Binding ParseCommand}" MinHeight="30" MinWidth="100" Margin="10"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

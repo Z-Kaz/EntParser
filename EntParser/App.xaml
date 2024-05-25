@@ -1,0 +1,9 @@
+﻿<Application x:Class="EntParser.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:EntParser"
+             StartupUri="View/EntParser.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
